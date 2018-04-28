@@ -1,0 +1,13 @@
+INSERT INTO burgers (burger_name) VALUES ('New Bacon-ings Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Child Molester Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Foot Feta-ish Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Tunami Burger');
+INSERT INTO burgers (burger_name) VALUES ('Mission A-Corn-Plished Burger');
+INSERT INTO burgers (burger_name) VALUES ('Rest in Peas Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Fig-eta Bout It Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Chevre Which Way But Loose Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Roquefort Files Burger');
+INSERT INTO burgers (burger_name) VALUES ('Totally Radish Burger - Comes with Radish');
+INSERT INTO burgers (burger_name) VALUES ('Olive and Let Die Burger');
+INSERT INTO burgers (burger_name) VALUES ('Thank God Its Fried Egg Burger');
+INSERT INTO burgers (burger_name) VALUES ('Poblano Picasso Burger');
