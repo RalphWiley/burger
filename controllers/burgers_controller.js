@@ -8,10 +8,12 @@ router.get('/', function(req, res) {
     };
 
     burger.selectAll(function(data) {
-        for(var i = 0; i < data.length; i++) {
-            info.brgr.push(data[i]);
-        }
+        var obJ = {
+            brgr: data
+        };
+        res.render('index', obJ);
     });
+    
 });
 
 router.post('/create', function(req, res) {
