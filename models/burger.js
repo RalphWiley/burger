@@ -6,11 +6,6 @@ var burger = {
             cb(res);
         });
     },
-    getMenu: function(cb){
-        orm.selectAll('menu', function(res){
-            cb(res);
-        });
-    },
     insertOne: function(val, cb){
         orm.insertOne('burgers', 'burger_name', val, function(res){
             cb(res);
