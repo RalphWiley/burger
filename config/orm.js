@@ -1,7 +1,7 @@
 var connection = require('./connection');
 
 var orm = {
-    selectAll: function(table, callback) {
+    selectAll: function(table, callback){
         var queryString = 'SELECT * FROM ' + table;
 
         connection.query(queryString, function(err, data) {
@@ -13,7 +13,7 @@ var orm = {
     insertOne: function(table, column, burgerInput, callback){
         var queryString = 'INSERT INTO ' + table + '(' + column + ') VALUES (?)';
 
-        conneciton.query(queryString, [burgerInput], function(err, data) {
+        connection.query(queryString, [burgerInput], function(err, data) {
             if(err) throw err;
             callback(data);
         });

@@ -1,7 +1,10 @@
 body{
     background: url('../img/BobsBurgers.jpeg');
+    background-position: center;
     font-family: 'Coiny', cursive, serif;
     font-size: 16px;
+  
+    
 }
 
 .card{

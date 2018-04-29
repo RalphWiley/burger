@@ -8,10 +8,10 @@ router.get('/', function(req, res) {
     };
 
     burger.selectAll(function(data) {
-        var obJ = {
-            brgr: data
-        };
-        res.render('index', obJ);
+        for(var i = 0; i < data.length; i++){
+            info.brgr.push(data[i]);
+        }
+        res.render('index', info);
     });
     
 });
