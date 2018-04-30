@@ -10,3 +10,11 @@ CREATE TABLE burgers
     date TIMESTAMP NOT NULL,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE menu
+(
+    id INT AUTO_INCREMENT NOT NULL,
+    item VARCHAR(50) NOT NULL,
+    entree BOOLEAN NOT NULL DEFAULT 1,
+    PRIMARY KEY(id)
+);

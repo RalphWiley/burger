@@ -5,15 +5,27 @@ var router = express.Router();
 router.get('/', function(req, res) {
     var info = {
         brgr: [],
+        itm: []
     };
 
     burger.selectAll(function(data) {
         for(var i = 0; i < data.length; i++){
             info.brgr.push(data[i]);
         }
-        res.render('index', info);
+        burger.getMenu(function(data){
+            for(var i = 0; i < data.length; i++){
+                info.itm.push(data[i]);
+            }
+            res.render('index', info);
+        });
     });
     
+});
+
+router.get('/menu', function(req, res){
+    burger.getMenu(function(data){
+        res.render('restaurantMenu', { itm: data});
+    });
 });
 
 router.post('/create', function(req, res) {
